@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俞樾奕的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .contact-info, .education, .research-projects, .awards, .skills, .activities {
+            margin-bottom: 20px;
+        }
+        .contact-info p, .education p, .research-projects p, .awards p, .skills p, .activities p {
+            margin: 5px 0;
+        }
+        .project, .activity, .award, .skill {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>俞樾奕的个人主页</h1>
+    <div class="contact-info">
+        <h2>联系方式</h2>
+        <p>邮箱: <a href="mailto:ustcyyy@mail.ustc.edu.cn">ustcyyy@mail.ustc.edu.cn</a></p>
+    </div>
+    <div class="education">
+        <h2>教育经历</h2>
+        <p>中国科学技术大学 信息科学技术学院 · 电子信息类 2021.09 – 2022.09</p>
+        <p>中国科学技术大学 网络空间安全学院 · 信息安全 2022.09 - 至今</p>
+    </div>
+    <div class="research-projects">
+        <h2>科研项目</h2>
+        <div class="project">
+            <h3>星鉴——支持多域多模型的机器生成文本检测系统 负责人 & 主力成员 2024.04 - 至今</h3>
+            <p>基于监督学习的方法，使用预训练语言模型，结合注意力机制进行关键特征提取，并使用 MLP 创建二元文本分类模型，用于区分人类与 AI 生成文本。</p>
+            <p>通过对人类以及 AI 生成文本 Token 频率分布差异的分析，在 PPL 的基础上进行改进，提出“细粒度 PPL”，基于“细粒度 PPL”目前已经初步实现一种全新的零样本检测（Zero-Shot）方法，并且在某些领域上性能已经超越了去年 Zero-Shot 的 sota 方法—Fast-DetectGPT，并且还能继续改进。</p>
+            <p>目前有一种将监督学习与 Zero-Shot 结合的思路，先构建判断模型，分析文本是否为监督学习训练时的域内数据，如果是则使用监督学习的方法进行检测，如果不是则使用 Zero-Shot 的方法。后续将与他人合作完成这个思路。</p>
+        </div>
+        <div class="project">
+            <h3>基于动力学模型及 ArcGIS 空间建模的失联潜水器定位方法 主力成员 2024.01 - 2024.05</h3>
+            <p>根据潜水器失联前的初始状态，通过动力学分析建模，结合 ArcGIS 分析洋流状态及海底深度，较为准确的分析出失联潜水器的最终位置。</p>
+        </div>
+        <div class="project">
+            <h3>基于 n-gram 模型的单表代换密码破译系统 负责人 2023.03 - 2023.07</h3>
+            <p>基于 n-gram 模型进行统计学分析，根据 n 元组频率表进行匹配，破译准确性极高。</p>
+        </div>
+    </div>
+    <div class="awards">
+        <h2>获奖情况</h2>
+        <div class="award">
+            <p>2024 MCM 美国大学生数学建模竞赛 M 奖 代码手 & 建模手 & 论文手 2024.05</p>
+        </div>
+    </div>
+    <div class="skills">
+        <h2>个人技能</h2>
+        <div class="skill">
+            <p>2022 年底开始接触并使用大语言模型，目前已经精通 Prompt 工程。</p>
+        </div>
+        <div class="skill">
+            <p>熟练使用 LaTeX，可以使用 LaTex 进行复杂文档撰写。</p>
+        </div>
+        <div class="skill">
+            <p>了解深度学习方面的知识，尤其是大语言模型方面。</p>
+        </div>
+</body>
+</html>
